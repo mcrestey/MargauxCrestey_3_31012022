@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss ./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcrestey/MargauxCrestey_3_31012022.git"
+  },
+  "author": "Margaux Crestey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcrestey/MargauxCrestey_3_31012022/issues"
+  },
+  "homepage": "https://github.com/mcrestey/MargauxCrestey_3_31012022#readme"
+}
