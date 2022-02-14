@@ -1,2 +1,4 @@
-@import "./Base/typography";
-@import "./Layout/header";
+@import "./Utils/variables","./Utils/mixins","./Utils/functions","./Utils/placeholders.scss";
+@import "./Base/reset","./Base/typography";
+@import "./Components/explore_restaurant_btn","./Components/new_btn";
+@import "./Layout/header", "./Layout/footer", "./Layout/about", "./Layout/functioning","./Layout/menu", "./Layout/restaurants","./Layout/location";

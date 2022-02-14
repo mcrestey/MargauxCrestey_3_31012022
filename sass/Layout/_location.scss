@@ -1,0 +1,39 @@
+.location{
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 5px 5px 0px #dddddd;
+}
+
+.fa-map-marker-alt{
+    color: $dark-color;
+}
+
+#location_search{
+    max-width:200px;
+    background-color: #eaeaea;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin:15px 0px 15px 0px;
+    text-align: center;
+    border: none;
+
+}
+
+.location_form{
+    display: flex;
+    align-items: center;
+}
+
+
+.location input::placeholder{
+    color:$dark-color;
+}
+
+.fa-map-marker-alt{
+    font-size: 1.4rem;
+}
+
+
+

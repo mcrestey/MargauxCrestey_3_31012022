@@ -1,0 +1,37 @@
+.functioning h2{
+    margin: 0px 0px 20px 15px;
+}
+
+.functioning_cards{
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    margin:0px 0px 80px 0px;
+}
+
+.functioning_card{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border: 1px solid transparent;
+    box-shadow: 4px 4px 6px #aaaaaa;
+    border-radius: 15px;
+    width: 75%;
+    padding: 15px 50px 15px 0px;
+}
+
+.functioning_card p{
+    font-size:larger;
+    font-weight: 500;
+}
+
+.functioning_card i{
+    color:#aaaaaa;
+    font-size: 1.5rem;
+}
+
+.number{
+    @include card-number;
+}
