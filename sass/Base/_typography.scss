@@ -11,8 +11,21 @@ h2{
     font-size:2rem;
 }
 
+.restaurant_menu h2{
+    font-family:shrikhand;
+}
+
+
+h3{
+    font-family: roboto, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+
 h4{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -20,9 +33,22 @@ i{
     font-family: "FontAwesome";
 }
 
+
+p{
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
 .footer_logo{
     font-family: shrikhand, roboto, sans-serif;
     font-size:1.3rem;
     color: white;
     margin-bottom: 20px;
+}
+
+.price{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:$dark-color;
 }

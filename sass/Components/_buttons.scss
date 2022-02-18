@@ -5,3 +5,11 @@
         box-shadow:4px 4px 6px #000000;
     }
 }
+
+.order{
+    @include order_btn;
+    &:hover {
+        background-color:lighten(#9356dc, 10%);
+        box-shadow:4px 4px 6px #000000;
+    }
+}

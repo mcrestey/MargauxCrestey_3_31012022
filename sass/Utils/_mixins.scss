@@ -47,3 +47,16 @@
     right:10px;
     z-index: 5;
 }
+
+@mixin order_btn{
+    width: 70%;
+    background-image: $linear-gradient;
+    border: 0px solid transparent;
+    border-radius: 40px;
+    padding: 20px 5px;
+    color: #ffffff;
+    font-size:1.4rem;
+    font-weight: 900;
+    box-shadow: 4px 4px 6px #aaaaaa;
+
+}

@@ -2,3 +2,21 @@ header h1 {
     text-align: center;
     margin:20px;
 }
+
+/*header des autres pages*/
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin: 0px 15px;
+}
+
+header i, .blank{
+    flex:1;
+}
+
+.fa-arrow-left{
+    font-size:1.6rem;
+    color:$dark-color;
+}
