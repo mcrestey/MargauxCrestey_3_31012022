@@ -54,7 +54,17 @@
 }
 
 
-.fa-heart{
+.fa-regular{
     font-size:2.2rem;
     -webkit-text-stroke: 2px white;
+    }
+
+.fas{
+    font-size: 2.2rem;
+    opacity:1;
+    &:hover{
+        opacity:1;
+        animation: fill 0.3s ease-in-out;
 }
+}
+
