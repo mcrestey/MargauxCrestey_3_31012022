@@ -3,109 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Ohmyfood - Restaurant À la française </title>
-    <link rel="stylesheet" href="public/css/style.css" type="text/css">
-    <meta name="description" content="Découvrez la carte du restaurant La palette du goût">
+    <title> Ohmyfood </title>
+    <link rel="stylesheet" href="../public/css/style.css" type="text/css">
+    <meta name="description" content="Découvrez la carte du Restaurant La palette du goût">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <script src="https://kit.fontawesome.com/5da6fe0c36.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/08c4fe488d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="apple-touch-icon" sizes="180x180" href="../OhMyFood/public/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../OhMyFood/public/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../OhMyFood/public/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="loader"><p>O</p><div class="shadow"></div></div>
+    
     <header>
-        <i class="fas fa-arrow-left"></i>
-        <h1>ohmyfood</h1>
+        <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+        <h1><a href="index.html">ohmyfood</a></h1>
+        <span class="blank"></span>
     </header>
 
-    <section class="main_img">
-        <img class="restaurant_img" src="public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du restaurant La palette du goût">
-    </section>
+    <img class="main_img" src="../public/images/restaurant-2.jpg" alt="Photo du restaurant La palette du goût">
+    <main>
+        <div class="restaurant_intro">
+            <h2>La palette du goût</h2>
+            <i class="full fas fa-heart"></i>
+            <i class="empty far fa-heart"></i>
+        </div>
 
     <section class="restaurant_menu">
-        <h2>La palette du goût</h2>
-        <i class="far fa-heart"></i>
-
-        <div class="starters">
+        <div class="starters food">
             <h3>Entrées</h3>
             <div class=underscore__blue></div>
-            <div class="restaurant_menu_card">
-                <h4>Fricassée d'Escargot</h4>
-                <p>Au piment d'Espelette</p>
-                <span>25€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Foie gras de caranrd mi-cuit</h4>
-                <p>Et ses copeaux de truffe noire</p>
-                <span>35€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Oeuf au plat</h4>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-                <span>20€</span>
+            <div class="restaurant_menu_cards">
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Fricassée d'escargot</h4>
+                        <p>Au piment d'espelette</p>
+                    </div>
+                    <div class="price">25€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Foie gras de canard mi-cuit</h4>
+                        <p>Et ses copeaux de truffe noire</p>
+                    </div>
+                    <div class="price">35€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Oeuf au plat</h4>
+                        <p>Assaisoné à la truffe sur lit de caviar</p>
+                    </div>
+                    <div class="price">20€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="main_dishes">
+        <div class="main_dishes food">
             <h3>Plats</h3>
             <div class=underscore__blue></div>
-            <div class="restaurant_menu_card">
-                <h4>Filet de boeuf aux herbes</h4>
-                <p>Accompagné de sa ribambelle de légumes</p>
-                <span>40€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Parmentier de queue de boeuf</h4>
-                <p>À la truffe noire sur sa purée de panais</p>
-                <span>35€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Filet de turbot</h4>
-                <p>Aux agrumes</p>
-                <span>44€</span>
+            <div class="restaurant_menu_cards">
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Filet de boeuf aux herbes</h4>
+                        <p>Accompagné de sa ribambelle de légumes</p>
+                    </div>
+                    <div class="price">40€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Parmentier de queue de boeuf</h4>
+                        <p>À la truffe noire sur sa purée de panais</p>
+                    </div>
+                    <div class="price">35€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Filet de turbo</h4>
+                        <p>Aux agrumes</p>
+                    </div>
+                    <div class="price">44€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="desserts">
+        <div class="desserts food">
             <h3>Desserts</h3>
             <div class=underscore__blue></div>
-            <div class="restaurant_menu_card">
-                <h4>Paris-Brest</h4>
-                <p>Revisité</p>
-                <span>18€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Macaron au chocolat d'exception</h4>
-                <p>Et glace à la vanille de Madagascar</p>
-                <span>22€</span>
-            </div>
-            <div class="restaurant_menu_card">
-                <h4>Mousse au chocolat</h4>
-                <p>Au piment d'Espelette et à la truffe noire</p>
-                <span>23€</span>
+            <div class="restaurant_menu_cards">
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Paris-Brest</h4>
+                        <p>Revisité</p>
+                    </div>
+                    <div class="price">18€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Macaron au chocolat d'exception</h4>
+                        <p>Et glace à la vanille de Madagascar</p>
+                    </div>
+                    <div class="price">22€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+                <div class="restaurant_menu_card">
+                    <div class="menu_card_text">
+                        <h4>Mousse au chocolat</h4>
+                        <p>Au piment d'espelette et à la truffe noire</p>
+                    </div>
+                    <div class="price">23€</div>
+                    <div class="menu_check">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
             </div>
         </div>
-        <button class="order">Commander</button>
     </section>
+    <div class="order_button">
+        <button class="order">Commander</button>
+    </div>
+    </main>
+
+
+
+
 
     <footer>
-        <p class="logo">ohmyfood</p>
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fas fa-utensils"></i>
-                    <p> Proposer un restaurant</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-repeat"></i>
-                    <p>Devenir partenaire</p>
-             </a>
-            </li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto: contact@ohmyfood.com" target="_blank">Contact</a></li>
-        </ul>
+        <div class="footer_section">
+            <p class="footer_logo">ohmyfood</p>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-utensils"></i>
+                        <p> Proposer un restaurant</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-handshake"></i>
+                        <p>Devenir partenaire</p>
+                    </a>
+                </li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto: contact@ohmyfood.com" target="_blank">Contact</a></li>
+            </ul>
+        </div>
     </footer>
+
 </body>

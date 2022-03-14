@@ -1,5 +1,9 @@
-h1, .logo{
-    font-family: shrikhand, roboto, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+
+h1 a, .logo{
+    font-family: "shrikhand", "roboto", sans-serif;
     font-size: 2.2rem;
 }
 body{
@@ -9,29 +13,27 @@ body{
 h2{
     font-weight:500;
     font-size:2rem;
+    padding: 2rem 1.5rem;
 }
 
-.restaurant_menu h2{
+.restaurant_intro h2{
     font-family:shrikhand;
 }
 
-
 h3{
-    font-family: roboto, sans-serif;
-    font-weight: 300;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: .5rem;
 }
 
 
 h4{
+    font-family: roboto, sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
 }
 
-i{
-    font-family: "FontAwesome";
-}
+
 
 
 p{
@@ -52,3 +54,4 @@ p{
     font-weight: 600;
     color:$dark-color;
 }
+

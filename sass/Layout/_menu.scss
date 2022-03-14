@@ -1,23 +1,67 @@
+
+
+
 .main_img{
     width: 100%;
-    height: 300px;
+    height: 70vh;
+    object-fit: cover;
     overflow: hidden;
+    @media (max-width:$breackpoint) {
+        height: 30vh;
+        object-position: center;
+    }
 }
 
-.restaurant_img{
-    width: 110%;
-    object-position: -35px 0px;
+
+
+.restaurant_intro{
+    position: relative;
+    background: white;
+    margin-top: -2rem;
+    border-radius: 2rem;
 }
 
+.fa-heart{
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top:50%;
+        transform: translateY(-50%);
+    }
+    
+ .empty{
+        z-index: 1;
+    }
+    
+.full{
+        background: $linear-gradient;
+        background-clip: text;
+        -webkit-background-clip:text;
+        color: transparent;
+        opacity: 0;
+        z-index: 5;
+        transition: all 200ms ease-in-out;
+        cursor: pointer;
+        &:hover{
+            opacity: 1;
+            transform: scale(1.2) translateY(-40%);
+        }
+    }
 
+.food{
+    min-width: 30.5%;
+}
 
 .restaurant_menu{
+    display: flex;
+    column-gap: 3rem;
     position:relative;
-    top:-65px;
-    max-width: 100%;
     background-color: white;
     border-radius: 50px;
     padding:0px 21px;
+    @media (max-width:$breackpoint) {
+        flex-direction: column;
+    }
 }
 
 .restaurant_menu_intro{
@@ -41,34 +85,87 @@
     margin-bottom: 40px;
 }
 
+
+
 .restaurant_menu_card{
-    border-radius: 15px;
+    overflow: hidden;
+    border-radius: 1.5rem;
     box-shadow: 4px 4px 6px #aaaaaa;
     display: flex;
     justify-content: space-between;
-    padding:18px 15px;
     min-height: 50px;
     margin-bottom: 20px;
+    animation: appear 1.5s;
+    animation-fill-mode: both;
+    @for $i from 1 through 4 {
+        &:nth-child(#{$i}){
+            animation-delay: 100ms*$i;
+        }
+    }
+    .menu_card_text{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        padding:18px 15px;
+        @media (max-width:$breackpoint) {
+            overflow: hidden;
+        }
+    }
+    .menu_card_text h4{
+        margin-bottom: 5px;
+        @media (max-width:$breackpoint) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .menu_card_text p{
+        @media (max-width:$breackpoint) {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .price{
+        display:flex;
+        align-items: flex-end;
+        padding:18px;
+    }
+    .menu_check{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-tertiary;
+        border-radius: 0rem 1.5rem 1.5rem 0rem;
+        width:5rem;
+        margin-right: -5rem;
+        color: white;
+        font-size: 2rem;
+        transition: all 0.5s;
+    }
+    &:hover {
+        .menu_check{
+            margin-right: 0rem;
+        }
+        i {
+            transform: rotate(1turn);
+            transition: transform 500ms ease-in-out;
+        }
+    }
+    
 }
 
-.menu_card_text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.menu_card_text h4{
-    margin-bottom: 5px;
-}
-
-.price{
-    display:flex;
-    align-items: flex-end;
-}
 
 .order_button{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 3rem;
+}
+
+
+.restaurant_img{
+    width: 110%;
+    object-position: -35px 0px;
 }
 

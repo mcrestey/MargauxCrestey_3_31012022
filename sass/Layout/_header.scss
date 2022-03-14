@@ -12,11 +12,14 @@ header{
     margin: 0px 15px;
 }
 
-header i, .blank{
+header a, .blank{
     flex:1;
 }
 
 .fa-arrow-left{
     font-size:1.6rem;
     color:$dark-color;
+    &:hover{
+        color: $color-primary;
+    }
 }

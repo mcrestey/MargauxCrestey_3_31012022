@@ -1,37 +1,52 @@
-.functioning h2{
-    margin: 0px 0px 20px 15px;
+.functioning{
+    counter-reset: steps;
+    margin-bottom: 5rem;
+    & ol{
+        padding:0rem 2rem;
+        display: flex;
+        gap: 2rem;
+        @media (max-width:768px){
+            flex-direction: column;
+        }
+    }
+    & li{
+        position: relative;
+        &::before{
+            content:counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: $color-primary;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:-1rem;
+
+        }
+        background-color: #f6f6f6;
+        color: $dark-color;
+        font-weight: 500;
+        padding: 1.5rem 2rem;
+        flex-grow: 1;
+        border-radius: 1rem;
+        @include base_shadow;
+        &:hover{
+            @include zoom;
+            background-color: #f5edff;
+            .fas{
+                color:$color-primary;
+            }
+        }
+        & i.fas{
+            margin-right: 1rem;
+            color: $light-grey;
+        }
+    }
 }
 
-.functioning_cards{
-    height: 310px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items:center;
-    margin:0px 0px 80px 0px;
-}
 
-.functioning_card{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    border: 1px solid transparent;
-    box-shadow: 4px 4px 6px #aaaaaa;
-    border-radius: 15px;
-    width: 75%;
-    padding: 15px 50px 15px 0px;
-}
-
-.functioning_card p{
-    font-size:larger;
-    font-weight: 500;
-}
-
-.functioning_card i{
-    color:#aaaaaa;
-    font-size: 1.5rem;
-}
-
-.number{
-    @include card-number;
-}

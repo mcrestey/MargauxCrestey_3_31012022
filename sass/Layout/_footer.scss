@@ -3,14 +3,14 @@ footer{
 }
 
 .footer_section{
-    padding:20px;
+    padding:2rem;
 }
 
 .footer_section a{
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -28,7 +28,14 @@ footer{
 
 .fa-utensils{
     margin-right:16px;
+    font-size: 1rem;
 }
 .fa-handshake{
     margin-right: 10px;
+    font-size: 1rem;
+}
+
+
+.footer_section p{
+    font-size: 1rem;
 }
